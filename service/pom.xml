@@ -13,9 +13,31 @@
     <packaging>pom</packaging>
     <modules>
         <module>service_user</module>
+        <module>service_hosp</module>
+        <module>service_cmn</module>
+        <module>service_msm</module>
+        <module>service_oss</module>
+        <module>service_order</module>
+        <module>service_task</module>
+        <module>service_statistics</module>
     </modules>
 
     <dependencies>
+        <dependency>
+            <groupId>com.atguigu</groupId>
+            <artifactId>model</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>com.atguigu</groupId>
+            <artifactId>service_util</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>com.atguigu</groupId>
+            <artifactId>common_util</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
 
         <!--web-->
         <dependency>
@@ -53,6 +75,16 @@
              <groupId>com.alibaba.cloud</groupId>
              <artifactId>spring-cloud-starter-alibaba-sentinel</artifactId>
          </dependency>-->
+
+        <!--swagger-->
+        <dependency>
+            <groupId>io.springfox</groupId>
+            <artifactId>springfox-swagger2</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>io.springfox</groupId>
+            <artifactId>springfox-swagger-ui</artifactId>
+        </dependency>
     </dependencies>
     <build>
         <plugins>
